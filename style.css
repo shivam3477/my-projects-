@@ -1,0 +1,199 @@
+:root{
+    --primary-color: #2563eb;   
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+body{
+    position: relative;
+}
+
+
+/* Navbar  */
+#navbar{
+    background-color: var(--primary-color);
+    /* max-width: 900px; */
+    margin: auto;
+    overflow: auto;
+    border-bottom-left-radius: 1rem;
+    position: sticky;
+    top: 0;
+}
+#navbar .navbar-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: white;
+    cursor: default;
+    display: inline-block;
+}
+#navbar .nav-list{
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-size: 20px;
+}
+.active{
+    font-weight: bolder;
+}
+
+#navbar ul{
+    text-align: right;
+    padding-right: 2rem;
+}
+.nav-humburger{
+    box-sizing: border-box;
+    background-color: rgb(232, 225, 225);
+    width: 2.7rem;
+    height: 2.2rem;
+    border: 1px solid black;
+    display: none;
+    float: right;
+    border-radius: 0.4rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all;
+    -ms-transform-origin-x: center ;
+    transition-duration: 0.4s;
+}
+.hb-lines{
+    width: 80%;
+    background-color: black;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.upper-line{
+    margin-top: 12%;
+    margin-bottom: 10%;
+    position: relative;
+    height: 4.8px;
+    transition: all;
+    transform-origin: left;
+    transition-duration: 0.7s;
+}
+.middle-line{
+    position: relative;
+    height: 4.8px;
+    margin-bottom: 10%;
+    transition: all;
+    transform-origin: left;
+}
+.lower-line{
+    position: relative;
+    height: 4.8px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    transition: all;
+    transition-duration: 0.7s;
+    transform-origin: left;
+}
+.upper-line-transition{
+    transform: rotate(34deg);
+    margin-left: 7px;
+}
+.middle-line-transition{
+    visibility: hidden;
+}
+.lower-line-transition{
+    transform: rotate(-34deg);
+    margin-left: 7px;
+}
+.hb-transition{
+    transform: rotate(-90deg);
+}
+.hb-links{
+    position: fixed !important;
+    top: 4.2rem;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    margin-left: 50%;
+    width: 0%;
+    display: none;
+    color: black;
+}
+.nav-hb-list{
+ padding: 2rem 40%;
+ font-size: 5px;
+ transition: all;
+ transition-duration: 1s;
+ font-size: large;
+}
+.hb-links-transition{
+    width: 50%;
+    display: block;
+}
+
+
+/* Header */
+header{
+    padding-top: 5rem;
+}
+.header-heading{
+    text-align: center;
+}
+.header-img img{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* Links */
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Lists */
+.list-no-bullets{
+    list-style: none;
+}
+.list-inline{
+    display: inline-block;
+    margin: 1rem;
+}
+
+/* Section */
+.container{
+    padding: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+.container h2{
+    padding-bottom: 1rem;
+}
+.ow-section{
+    background-color: rgb(241, 232, 232);
+}
+
+/* Footer */
+footer{
+    background-color: rgb(69, 63, 63);
+    color: white;
+    border-top-right-radius: 1rem;
+}
+.footer-heading-text{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+.social-links{
+    text-align: center;
+}
+
+
+@media screen and (max-width:520px) {
+    #navbar ul{
+        display: none;
+    }
+    .nav-humburger{
+        display: block;
+    }  
+}
+@media screen and (min-width:520px) and (max-width:100000px) {
+    .hb-links{
+        display: none;
+    }
+}
